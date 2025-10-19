@@ -3,7 +3,29 @@
 ## Überblick
 DIAS (Digitaler Intelligenter Assistent) ist eine moderne WebUI-Platform mit Clean Light Mode Design, die verschiedene KI-gestützte Tools und Services in einer zentralen Benutzeroberfläche vereint.
 
-## Features (Version 4.0.1)
+## Design System & Style Guide
+Die DIAS-Plattform verfügt über ein umfassendes Design System, das in **`styleguide.md`** dokumentiert ist.
+
+### Style Guide Inhalt
+- **Farbsystem**: Primär- und Sekundärfarben, Text-Hierarchie, semantische Farben, Farbverläufe
+- **Typografie**: Inter-Schriftfamilie, responsive Größenskala, Zeilenhöhen
+- **Spacing**: 8px-Grid-System, Container-Breiten, responsive Layouts
+- **Komponenten**: Buttons (3 Varianten), 4-stufiges Glass-Morphism-System, Formulare, Navigation
+- **Effekte**: Border-Radius, 5-stufiges Schatten-System, 10+ Animationen
+- **Breakpoints**: Mobile-First responsive Patterns
+- **CSS-Variablen**: Komplette Design-Token-Referenz
+
+### Verwendung
+Für detaillierte Informationen zu Farben, Komponenten, Animationen und Best Practices siehe **`styleguide.md`** im Hauptverzeichnis.
+
+### Wichtige Design-Prinzipien
+1. **Glass Morphism First**: 4-stufiges System (subtle → medium → strong → premium)
+2. **Animations-Philosophie**: Maximal 3 Hauptanimationen pro View
+3. **Farbkonsistenz**: Blue-Cyan-Farbverlauf für primäre Aktionen
+4. **8px-Grid**: Konsistentes Spacing-System
+5. **Mobile-First**: Responsive Design mit progressiver Erweiterung
+
+## Features (Version 4.1.1)
 
 ### Design Updates - Clean Light Mode
 - **Komplett weißer Hintergrund**: Sauberes, ablenkungsfreies Design ohne Gradient-Effekte
@@ -63,13 +85,50 @@ npm start
 
 ## Technologie-Stack
 - **Frontend**: Next.js 15 mit TypeScript
-- **Styling**: Tailwind CSS
-- **Animationen**: Framer Motion
-- **Testing**: Playwright
+- **Styling**: Tailwind CSS v3.4
+- **Animationen**: Framer Motion v11.15
+- **Icons**: Lucide React v0.539
+- **Testing**: Playwright v1.54
 - **Code-Qualität**: ESLint mit Next.js strict config
 - **Deployment**: Vercel/Node.js
+- **Design System**: Dokumentiert in styleguide.md
 
-## Neue Features in v4.0.1
+## Neue Features in v4.1.1
+
+### Design System Dokumentation
+- **Comprehensive Style Guide**: Komplettes Design System in `styleguide.md` dokumentiert
+- **CSS Variables**: Alle Design-Tokens als CSS Custom Properties verfügbar
+- **Component Patterns**: Vordefinierte Komponenten-Muster mit Code-Beispielen
+- **Animation Library**: 10+ Keyframe-Animationen dokumentiert und wiederverwendbar
+- **4-Tier Glass Morphism**: Systematisches Glass-Effect-System
+- **Design Principles**: Dokumentierte Design-Philosophie und Best Practices
+
+### Design System Features
+```
+📁 styleguide.md
+  ├── Color System (Primär, Sekundär, Semantisch, Verläufe)
+  ├── Typography (Inter Font, Responsive Skala)
+  ├── Spacing (8px Grid System)
+  ├── Components (Buttons, Cards, Forms, Navigation)
+  ├── Effects (Shadows, Animations, Transitions)
+  ├── Breakpoints (Mobile-First Responsive)
+  └── CSS Variables (Complete Token Reference)
+```
+
+### Verwendung im Code
+```jsx
+// Primärer Button mit Design System
+<button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 rounded-2xl text-white font-semibold text-lg shadow-2xl shadow-blue-500/70 transition-all duration-300">
+  Aktion
+</button>
+
+// Glass Card (Medium Tier)
+<div className="glass-medium glass-depth-hover glass-float rounded-3xl p-8">
+  Content
+</div>
+```
+
+## Features aus v4.0.1
 
 ### Clean Light Mode Updates
 - **Header Redesign**: Entfernung der kleinen viereckigen Icon mit Kreis, nur noch Keyvisual mit DIAS Text
@@ -117,4 +176,9 @@ npm start
 **Status**: Production-ready ✅  
 
 ## Version
-Aktuelle Version: 4.0.1 (Final)
+Aktuelle Version: 4.1.1
+
+### Version History
+- **v4.1.1**: Comprehensive design system style guide (styleguide.md)
+- **v4.0.1**: Clean Light Mode mit optimierter Farbharmonie
+- **v4.0**: Initial Glass Morphism und Blue-Cyan Branding
