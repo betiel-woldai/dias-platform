@@ -187,8 +187,8 @@ export default function HomePage() {
               repeat: Infinity,
               ease: "easeInOut"
             }}
-            className="absolute top-1/4 left-1/2 w-96 h-96 glass-premium rounded-full"
-            style={{ 
+            className="absolute top-[32%] left-[42%] w-96 h-96 glass-premium rounded-full"
+            style={{
               backdropFilter: 'blur(80px)',
               transform: 'translate(-50%, -50%)'
             }}

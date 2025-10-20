@@ -16,7 +16,7 @@ Open [http://localhost:3000](http://localhost:3000)
 - 🎨 Glass morphism design system (4-tier)
 - 🎯 7 AI module mockups
 - 📱 Fully responsive
-- ⚡ Smooth animations
+- ⚡ Smooth animations 
 
 ## Tech Stack
 
