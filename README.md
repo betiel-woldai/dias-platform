@@ -2,6 +2,10 @@
 
 **Digitaler Intelligenter Assistent** - Mockup startpage with glass morphism design.
 
+## See Mockup in Screenshot file startingpage.png 
+
+Or
+
 ## Quick Start
 
 ```bash
